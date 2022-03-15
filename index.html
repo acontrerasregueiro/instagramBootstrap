@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Your Bootstrap Link should be always before the CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title> Instagram with Bootstrap practice</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-12" id="title">
+
+                <div id="TitteIcon">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <div id="logo">
+                                <a class="navbar-brand" href="#">
+                                    <i class="bi bi-instagram"></i>
+                                    <span class="glyphicon glyphicon-envelope">Instagram</span>
+                                </a>
+                            </div>
+                            <div id="menuderecho">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Create new post
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <div class="mb-3">
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3"></textarea>
+                                                    </div>
+
+                                                    <i class="bi bi-camera-fill bi-border" style="font-size: 2rem"></i>
+                                                    <i class="bi bi-geo-alt-fill" style="font-size: 2rem"></i>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-primary">Publish</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item dropdown pull-right">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-gear-fill"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-lg-end"
+                                                aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="pillsnavegacion">
+            <ul class="nav nav-pill justify-content-center" id="navtab1" >
+                <li class="nav-pill">
+                    <a href="#thumbs" class="nav-link active" data-bs-toggle="tab"><i class="bi bi-grid-3x3-gap-fill grey"></i></a>
+                </li>
+                <li class="nav-pill">
+                    <a href="#onecolumposts" class="nav-link" data-bs-toggle="tab"><i class="bi bi-square-fill grey"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="contenido" class="tab-content">
+            <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="thumbpill" id ="thumbs">
+                <div class="row h-250">
+                    <div class="col thumb">
+                        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/02C2/production/_122360700_gettyimages-1280424615.jpg"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col thumb">
+                        <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbtLqB-L5WxJpCjvVmSl57xyg7r6M4aS-kYOnI7JrEMUUSVBLGziKTWCenLptYAQghdzsxOA2rWtRvG_xs4pCuJ7v_KQLEOVYTKwndgi3TmtWWn9.jpg?r=59e"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col thumb">
+                        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/02C2/production/_122360700_gettyimages-1280424615.jpg"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+    
+                <div class="row h-250">
+                    <div class="col thumb">
+                        <img src="https://store-images.s-microsoft.com/image/apps.36181.14427308708381960.f9f5635e-77f1-416f-a447-f890b6724b1e.26fefe31-87c1-43cf-abb4-93188bcfd695?mode=scale&q=90&h=1080&w=1920"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col thumb">
+                        <img src="https://media.baamboozle.com/uploads/images/504628/1635844505_435597.jpeg"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col thumb">
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                              src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                              title="YouTube video"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                    </div>
+                </div>
+    
+                <div class="row h-250">
+                    <div class="col thumb">
+                        <img src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2019/10/hipertextual-que-ningun-animal-tiene-tres-patas-2019533984.jpg?fit=1920%2C1280&ssl=1"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col thumb">
+                        <img src="https://images.unsplash.com/photo-1598755257130-c2aaca1f061c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2lsZCUyMGFuaW1hbHxlbnwwfHwwfHw%3D&w=1000&q=80"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col thumb ">
+                        <img src="https://www.fundacionaquae.org/wp-content/uploads/2018/10/proteger-a-los-animales.jpg"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade"id="onecolumposts" class= "onecolumn">
+                <div class="row onecolumnCenter">
+                    <div class=" articleonepage">
+                        <div class="row">
+                            <div class="col-11">
+                              My first Photo
+                            </div>
+                            <div class="col-1"> 12/24                 
+                            </div>
+                          </div>
+                        <!--<div class="row" id="articletitle">
+                             
+                            <div class="col-9 articletitle">My First Photo</div>
+                            <div class="col-3 articledate">12/25</div>
+                        </div>  -->
+
+                        <div class="row"></div>
+                        <div class="row"></div>                      
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+
+</html>

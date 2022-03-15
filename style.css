@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+    margin-top: 25px;
+}
+
+.h-250 {    
+    height: 250px;
+}
+.thumb {
+    margin-top: 10px;
+}
+
+.onecolumnCenter {
+    height: 600px;
+    background-color: antiquewhite;
+    width:60%;
+    margin: 30px auto;
+}
+
+.articletitle {
+    width: 80%;
+}
+.articledate{
+    float:right;
+}
